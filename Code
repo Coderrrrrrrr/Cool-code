@@ -1,0 +1,149 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, eventlog, FileUtil, TAGraph, Forms, Controls, Graphics,
+  Dialogs, StdCtrls, ExtCtrls, Menus, ComCtrls, PopupNotifier, ColorBox,
+  Buttons, PairSplitter, ButtonPanel, Grids, ExtDlgs, Spin, Calendar, DbCtrls,
+  LazHelpHTML, EditBtn, ValEdit, types;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    ButtonPanel1: TButtonPanel;
+    Calendar1: TCalendar;
+    CheckBox1: TCheckBox;
+    ColorBox1: TColorBox;
+    DBNavigator1: TDBNavigator;
+    EditButton1: TEditButton;
+    Label1: TLabel;
+    MenuItem30: TMenuItem;
+    MenuItem31: TMenuItem;
+    MenuItem32: TMenuItem;
+    MenuItem33: TMenuItem;
+    MenuItem34: TMenuItem;
+    MenuItem35: TMenuItem;
+    MenuItem36: TMenuItem;
+    MenuItem37: TMenuItem;
+    MenuItem38: TMenuItem;
+    MenuItem39: TMenuItem;
+    MenuItem40: TMenuItem;
+    MenuItem41: TMenuItem;
+    MenuItem42: TMenuItem;
+    MenuItem43: TMenuItem;
+    MenuItem44: TMenuItem;
+    MenuItem45: TMenuItem;
+    MenuItem46: TMenuItem;
+    ProgressBar1: TProgressBar;
+    Simulator_Type: TLabeledEdit;
+    ListView1: TListView;
+    MenuItem16: TMenuItem;
+    MenuItem17: TMenuItem;
+    MenuItem18: TMenuItem;
+    MenuItem19: TMenuItem;
+    MenuItem20: TMenuItem;
+    MenuItem21: TMenuItem;
+    MenuItem22: TMenuItem;
+    MenuItem23: TMenuItem;
+    MenuItem24: TMenuItem;
+    MenuItem25: TMenuItem;
+    MenuItem26: TMenuItem;
+    MenuItem27: TMenuItem;
+    MenuItem28: TMenuItem;
+    MenuItem29: TMenuItem;
+    Password: TLabeledEdit;
+    PopupNotifier1: TPopupNotifier;
+    PopupNotifier2: TPopupNotifier;
+    SpinEdit1: TSpinEdit;
+    StringGrid1: TStringGrid;
+    Timer1: TTimer;
+    ToggleBox1: TToggleBox;
+    Username: TLabeledEdit;
+    MainMenu1: TMainMenu;
+    MenuItem1: TMenuItem;
+    MenuItem10: TMenuItem;
+    MenuItem11: TMenuItem;
+    MenuItem12: TMenuItem;
+    MenuItem13: TMenuItem;
+    MenuItem14: TMenuItem;
+    MenuItem15: TMenuItem;
+    MenuItem2: TMenuItem;
+    MenuItem3: TMenuItem;
+    MenuItem4: TMenuItem;
+    MenuItem5: TMenuItem;
+    MenuItem6: TMenuItem;
+    MenuItem7: TMenuItem;
+    MenuItem8: TMenuItem;
+    MenuItem9: TMenuItem;
+    Run: TMenuItem;
+    procedure MenuItem1Click(Sender: TObject);
+    procedure PopupNotifier1Close(Sender: TObject; var CloseAction: TCloseAction
+      );
+    procedure ProgressBar1ContextPopup(Sender: TObject; MousePos: TPoint;
+      var Handled: Boolean);
+    procedure RunClick(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
+    procedure ValueListEditor1Click(Sender: TObject);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.MenuItem1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.PopupNotifier1Close(Sender: TObject;
+  var CloseAction: TCloseAction);
+begin
+
+end;
+
+procedure TForm1.ProgressBar1ContextPopup(Sender: TObject; MousePos: TPoint;
+  var Handled: Boolean);
+begin
+
+end;
+
+procedure TForm1.RunClick(Sender: TObject);
+begin
+  button1.Enabled := false;
+    groupbox1.Visible := true;
+    groupbox2.visible := true;
+    label6.visible := true;
+      label2.visible := true;
+      progressbar1.Position := 25;
+      Application.ProcessMessages;
+
+end;
+
+procedure TForm1.Timer1Timer(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.ValueListEditor1Click(Sender: TObject);
+begin
+
+end;
+
+end.
+                         
